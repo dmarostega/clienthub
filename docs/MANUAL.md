@@ -1,41 +1,60 @@
-# Manual do Proposta Fácil
+# Manual — ClientHub
 
 ## Visão geral
 
-O Proposta Fácil ajuda profissionais autônomos e pequenos negócios a criar propostas comerciais, controlar status e enviar um link público para o cliente aprovar ou recusar.
+O ClientHub é um sistema para gerenciamento de projetos e acompanhamento pelo cliente.
 
-## Como cadastrar clientes
+## Clientes
 
-1. Acesse a área autenticada.
-2. Abra `Clientes`.
-3. Informe nome, e-mail, telefone, documento, endereço e observações.
-4. Salve. Clientes ficam isolados por usuário.
+Nesta área será possível cadastrar e gerenciar clientes.
 
-## Como criar propostas
+## Projetos
 
-1. Abra `Propostas` e selecione um cliente.
-2. Defina título, descrição, validade, observações e condições comerciais.
-3. Adicione itens com descrição, quantidade e valor unitário.
-4. Opcionalmente informe desconto.
-5. O sistema calcula subtotal e total e valida o limite do plano.
+Nesta área será possível criar projetos, definir prazos, status, etapas e tarefas.
 
-## Como enviar link público
+## Etapas
 
-Ao criar a proposta, o sistema gera um token público seguro. Envie a URL `/p/{token}` ao cliente. O cliente não precisa de login para visualizar, aprovar ou recusar.
+Cada projeto poderá conter etapas como planejamento, desenvolvimento, revisão, aprovação e entrega.
 
-## Como funcionam os planos
+## Tarefas
 
-- **Gratuito**: até 3 propostas por mês, sem logo personalizada.
-- **Pro**: até 50 propostas por mês e PDF.
-- **Plus**: propostas ilimitadas, PDF e logo personalizada.
+As tarefas ajudam a organizar atividades internas relacionadas ao projeto.
 
-Pagamentos não estão implementados no MVP. O plano é alterado manualmente pelo admin.
+## Comentários
 
-## Como o admin gerencia usuários e planos
+O sistema poderá permitir comentários em projetos e etapas.
 
-A área `/admin` exige role `admin`. O admin pode:
+## Arquivos
 
-- Criar, editar e desativar planos.
-- Listar usuários, ativar/desativar e alterar plano manualmente.
-- Atualizar configurações globais do aplicativo.
-- Consultar relatório básico de usuários, usuários por plano, propostas criadas e aprovadas.
+O sistema poderá permitir upload de arquivos relacionados ao projeto.
+
+## Aprovação de etapas
+
+O cliente poderá aprovar etapas do projeto, quando esse recurso estiver disponível.
+
+## Portal do cliente
+
+O sistema poderá disponibilizar um link ou área simplificada para o cliente acompanhar o andamento do projeto.
+
+## Status do projeto
+
+Status previstos:
+
+- Planejamento
+- Em andamento
+- Aguardando cliente
+- Em revisão
+- Concluído
+- Cancelado
+
+## Planos
+
+O sistema terá plano gratuito e planos pagos configuráveis pelo painel admin.
+
+## Painel admin
+
+O admin poderá gerenciar usuários, planos e configurações globais do sistema.
+
+## Observação
+
+Este manual será atualizado conforme o desenvolvimento evoluir.
